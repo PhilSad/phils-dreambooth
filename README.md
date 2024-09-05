@@ -4,8 +4,8 @@
 ### train
 tuto: https://github.com/bghira/SimpleTuner/blob/main/documentation/quickstart/FLUX.md
 ```bash
-apt -y install nvidia-cuda-toolkit libgl1-mesa-glx # for runpod
-git clone --branch=release https://github.com/bghira/SimpleTuner.git
+apt update && apt -y install nvidia-cuda-toolkit libgl1-mesa-glx # for runpod
+git clone --branch=release https://github.com/bghira/SimpleTuner.git 
 
 cd SimpleTuner
 
@@ -16,7 +16,10 @@ source .venv/bin/activate
 
 pip install -U poetry pip
 poetry install
-```
+pip install optimum-quanto
+apt install tmux
+huggingface-cli login # need write token
+
 
 `CONFIG_BACKEND=json ./train.sh`
 
