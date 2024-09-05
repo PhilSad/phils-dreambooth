@@ -7,7 +7,7 @@
     "--output_dir": "/workspace/phils-dreambooth/flux_ckpt2",
     "--lora_type": "standard",
     "--lycoris_config": "config/lycoris_config.json",
-    "--max_train_steps": 100000,
+    "--max_train_steps": 10000,
     "--num_train_epochs": 0,
     "--checkpointing_steps": 500,
     "--checkpoints_total_limit": 5,
@@ -40,11 +40,5 @@
     "--validation_torch_compile": "false",
     "--disable_benchmark": "false",
     "--user_prompt_library": "config/user_prompt_library.json",
-    "--flux_lora_target": "mmdit",
-    "--base_model_precision": "int2-quanto",
-    "--text_encoder_1_precision": "no_change",
-    "--text_encoder_2_precision": "no_change",
-    "--lora_rank": 16,
-    "--max_grad_norm": 1.0,
-    "--base_model_default_dtype": "bf16"
+    "--flux_lora_target": "mmdit"
 }
